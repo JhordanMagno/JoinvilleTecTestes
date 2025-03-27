@@ -1,9 +1,12 @@
+// app.js
 var Pessoa = require("./commons/pessoa");
-var soma = require("./commons/Soma");
-var subtracao = require("./commons/Soma");
-var divisao = require("./commons/Soma");
-var mu
-tiplicacao = require("./commons/Soma");
-jhordan = Pessoa();
+var { soma, subtracao, divisao, multiplicacao } = require("./commons/Soma");
+
+var jhordan = Pessoa();
 console.log(JSON.stringify(jhordan));
-console.log(soma(2, 2));
+
+// Realizando operações
+console.log("Soma: ", soma(2, 2));
+console.log("Subtração: ", subtracao(5, 3));
+console.log("Divisão: ", divisao(10, 2));
+console.log("Multiplicação: ", multiplicacao(3, 4));
